@@ -20,3 +20,9 @@ sudo chmod -Rfv go+r /tmp/.ssh/*.pub
 sudo chmod -Rfv 644 /tmp/.ssh/config || echo 'Oops, seems like config file has not beed found.'
 ls -lah /tmp/.ssh
 ```
+
+After fix you can move your key in proper directory:
+
+```bash
+mv -f /tmp/.ssh/* ~/.ssh/
+```
